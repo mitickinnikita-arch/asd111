@@ -128,8 +128,11 @@ a:focus-visible, button:focus-visible { outline: 3px solid #83a879; outline-offs
 .hotline-copy h4 { margin: 0; color: #ff2828; font-size: 32px; line-height: 1.25; }
 .hotline-phone { display: block; color: #ff2828; font-size: 20px; font-weight: 800; white-space: nowrap; }
 .project-resources { margin-top: 19px; overflow: hidden; background: #e3ecdf; border: 1px solid #d7e1d5; }
-.project-resources > summary { padding: 13px 16px; color: var(--green-dark); font-size: 14px; font-weight: 800; cursor: pointer; }
-.project-resources > summary::marker { color: var(--green); }
+.project-resources > summary { display: flex; align-items: center; gap: 10px; padding: 13px 16px; color: var(--green-dark); font-size: 14px; font-weight: 800; cursor: pointer; list-style: none; }
+.project-resources > summary::-webkit-details-marker { display: none; }
+.project-resources > summary::marker { content: ""; }
+.project-resources > summary::before { width: 7px; height: 7px; flex: 0 0 7px; border-right: 2px solid var(--green); border-bottom: 2px solid var(--green); content: ""; transform: rotate(-45deg); transition: transform .2s ease; }
+.project-resources[open] > summary::before { transform: rotate(45deg); }
 .project-disclosure-content { overflow: hidden; }
 .project-resource-links { display: grid; gap: 11px; padding: 0 16px 16px; }
 .project-resource-links a { color: var(--green-dark); font-size: 12px; line-height: 1.6; text-decoration: underline; text-underline-offset: 2px; }
