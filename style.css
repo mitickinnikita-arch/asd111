@@ -211,11 +211,8 @@ a:focus-visible, button:focus-visible { outline: 3px solid #83a879; outline-offs
   .quick-link { min-height: 56px; gap: 7px; padding: 8px; font-size: 8px; }
   .quick-icon { width: 24px; height: 24px; font-size: 8px; }
   .link-arrow { font-size: 12px; }
-  .page-layout { grid-template-columns: 1fr; grid-template-areas: "main" "sidebar"; gap: 15px; padding: 16px 14px 21px; }
-  .sidebar { gap: 8px; }
-  .sidebar-heading { padding: 8px 11px; }
-  .sidebar-heading h2 { font-size: 11px; }
-  .section-cards { gap: 8px; }
+  .page-layout { grid-template-columns: 1fr; grid-template-areas: "main"; gap: 15px; padding: 16px 14px 21px; }
+  .sidebar { display: none; }
   .main-panel { padding: 18px 14px; }
   .panel-heading { padding-bottom: 15px; }
   .panel-heading h2 { font-size: 25px; }
