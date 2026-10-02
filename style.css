@@ -250,3 +250,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid #83a879; outline-offs
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
   .other-wide-banner-link:hover { transform: none; }
 }
+@media (max-width: 767px) {
+  .page-layout > .sidebar { display: none !important; }
+}
